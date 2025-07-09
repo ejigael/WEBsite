@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fffefe;
+}
+.main{
+    height:700px;
+    position: relative;
+}
+
+.main-content{
+    position:absolute;
+    top:60%;
+    text-align: center;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-row{
+    overflow: hidden;
+    height: 350px;
+    margin-bottom: 10px;
+}
+
+.slider {
+  display: flex;
+  width: max-content;
+}
+
+.slider img {
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.falling-img {
+    position: absolute;
+    top: -200px; /* 画面外スタート */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: auto;
+    z-index: 10;
+    animation: fall 2s ease-out forwards;
+}
+@keyframes fall {
+    to{
+        top: 200px;
+    }
+    
+}
+.profile {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.profile h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.profile p {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.profile-img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px; /* 角を丸くしたい場合 */
+  display: block;
+  margin: 0 auto; /* 中央寄せ */
+}
+
