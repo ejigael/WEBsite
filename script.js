@@ -3,7 +3,7 @@ const slider2 = document.getElementById('slider2');
 
 let position1 = 0;
 let position2 = 0;
-const speed = 1.5;
+const speed = 0.8;
 
 window.onload = () => {
   // 画像が読み込まれてから scrollWidth を使う
